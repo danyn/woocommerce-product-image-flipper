@@ -1,12 +1,11 @@
 <?php
 /*
-Plugin Name: WooCommerce Product Image Flipper
-Plugin URI: http://jameskoster.co.uk/tag/product-image-flipper/
+Plugin Name: WooCommerce Product Image Flipper Forked For BJ Lazy Loader Edit
+Plugin URI: https://github.com/danyn/woocommerce-product-image-flipper
 Version: 0.4.1
 Description: Adds a secondary image on product archives that is revealed on hover. Perfect for displaying front/back shots of clothing and other products.
-Author: jameskoster
-Author URI: http://jameskoster.co.uk
-Text Domain: woocommerce-product-image-flipper
+Author: jameskoster forked by dan eisen
+
 Domain Path: /languages/
 
 License: GNU General Public License v3.0
