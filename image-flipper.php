@@ -87,7 +87,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 					$secondary_image_alt = get_post_meta( $secondary_image_id, '_wp_attachment_image_alt', true );
 					$secondary_image_title = get_the_title($secondary_image_id);
 
-					echo wp_get_attachment_image(
+					$ragstock_second_image = wp_get_attachment_image(
 						$secondary_image_id,
 						'shop_catalog',
 						'',
@@ -97,6 +97,10 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 							'title' => $secondary_image_title
 						)
 					);
+						/* add filter for lazloader https://wordpress.org/plugins/bj-lazy-load */
+					
+					$ragstock_second_image = apply_filters( 'bj_lazy_load_html', $ragstock_second_image );
+					echo $ragstock_second_image;
 				}
 			}
 
